@@ -10,7 +10,7 @@ const StudiosList = ({ studios }) => {
 };
 
 StudiosList.propTypes = {
-  studios: PropTypes.array,
+  studios: PropTypes.array.isRequired,
 };
 
 export default StudiosList;

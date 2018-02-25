@@ -12,10 +12,10 @@ const StudiosItem = ({
 );
 
 StudiosItem.propTypes = {
-  name: PropTypes.string,
-  price: PropTypes.number,
-  view: PropTypes.array,
-  params: PropTypes.array,
+  name: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  view: PropTypes.array.isRequired,
+  params: PropTypes.array.isRequired,
 };
 
 export default StudiosItem;
