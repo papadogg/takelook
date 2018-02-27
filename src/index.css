@@ -2,4 +2,86 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background: #eee;
+  overflow-y: scroll;
+  touch-action: auto;
+}
+
+.contanier {
+  padding: 0 50px;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  height: 80;
+}
+
+.studios-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.studios-item {
+  width: 320px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.studios-image {
+  height: 240px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.price {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  background: #407eff;
+  color: white;
+  padding: 2px 10px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.price-filter {
+  background-color: white;
+  border: 1px solid rgb(217, 217, 217);
+  border-radius: 4px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.price-filter div:first-of-type {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.ant-slider-handle {
+  border-color: #407eff !important;
+}
+
+.ant-slider-track {
+  background-color: #407eff !important;
 }

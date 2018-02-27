@@ -38,19 +38,24 @@ class PriceFilter extends React.Component {
   render() {
     const { priceRange } = this.state;
     return (
-      <div>
-        <Slider
-          range
-          step={10}
-          min={this.min}
-          max={this.max}
-          value={priceRange}
-          tipFormatter={null}
-          onAfterChange={this.setPrice}
-          onChange={this.changeHandler}
-        />
+      <div className="price-filter">
         <div>
-          Стоимость <span>{priceRange[0]}</span> - <span>{priceRange[1]}</span>
+          <span>Стоимость</span>
+          <span>
+            {priceRange[0]} - {priceRange[1]}
+          </span>
+        </div>
+        <div className="slider-container">
+          <Slider
+            range
+            step={10}
+            min={this.min}
+            max={this.max}
+            value={priceRange}
+            tipFormatter={null}
+            onAfterChange={this.setPrice}
+            onChange={this.changeHandler}
+          />
         </div>
       </div>
     );
